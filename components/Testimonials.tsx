@@ -29,7 +29,7 @@ const testimonials = [
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 p-8 rounded-xl border border-gray-200">
               <blockquote className="text-lg italic text-gray-700">
-                "{testimonial.quote}"
+                {testimonial.quote}
               </blockquote>
               <div className="mt-6">
                 <p className="font-semibold text-gray-900">{testimonial.author}</p>

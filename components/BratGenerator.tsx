@@ -169,7 +169,7 @@ export default function BratGenerator() {
     ctx.textBaseline = 'middle'
     ctx.font = `${previewLayout.fontSize}px ${fontFamily}`
     
-    const padding = Math.min(canvas.width, canvas.height) * PADDING_RATIO
+    // const padding = Math.min(canvas.width, canvas.height) * PADDING_RATIO
     const startY = (canvas.height - previewLayout.contentHeight) / 2 + previewLayout.lineHeight / 2
     
     // 第一层模糊文本
