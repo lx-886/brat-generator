@@ -143,7 +143,7 @@ export default function BratGenerator() {
   });
   
   // 预设系统
-  const [presets, setPresets] = useState<Preset[]>([
+  const [presets] = useState<Preset[]>([
     { 
       id: 'neon', 
       name: 'Neon Effect',
@@ -973,7 +973,7 @@ export default function BratGenerator() {
                           <Label>Type:</Label>
                           <Select 
                             value={bgGradient.type} 
-                            onValueChange={type => setBgGradient({...bgGradient, type})}
+                            onValueChange={type => setBgGradient({...bgGradient, type: type as "linear" | "radial"})}
                           >
                             <SelectTrigger className="w-32">
                               <SelectValue placeholder="Select type" />
@@ -1057,7 +1057,7 @@ export default function BratGenerator() {
                           <Label>Type:</Label>
                           <Select 
                             value={bgPattern.type} 
-                            onValueChange={type => setBgPattern({...bgPattern, type})}
+                            onValueChange={type => setBgPattern({...bgPattern, type: type as "grid" | "dots" | "lines"})}
                           >
                             <SelectTrigger className="w-32">
                               <SelectValue placeholder="Select pattern" />
