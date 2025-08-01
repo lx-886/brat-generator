@@ -13,16 +13,16 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-white">
       <Header />
-      <main className="flex-1 pt-5">
+      <main className="flex-1">
         {/* 第一屏：核心工具 */}
-        <section id="generator" className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 w-full">
-            <div className="w-full max-w-7xl mx-auto">
-                <h1 className="text-4xl md:text-6xl font-bold text-center mb-8 text-gray-900">Brat Generator</h1>
-                <p className="text-center text-xl mb-12 text-gray-700 max-w-3xl mx-auto">
-                  Create unique brat aesthetic designs, text, and images inspired by Charli XCX and pop culture. Our free Brat Generator tool helps you express your brat style effortlessly.
-                </p>
-                <BratGenerator />
-            </div>
+        <section id="generator" className="min-h-screen flex items-center justify-center bg-gray-50 py-12 w-full">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+            <h1 className="text-4xl md:text-6xl font-bold text-center mb-8 text-gray-900">Brat Generator</h1>
+            <p className="text-center text-xl mb-12 text-gray-700 max-w-3xl mx-auto">
+              Create unique brat aesthetic designs, text, and images inspired by Charli XCX and pop culture. Our free Brat Generator tool helps you express your brat style effortlessly.
+            </p>
+            <BratGenerator />
+          </div>
         </section>
 
         {/* 第二屏：示例展示 */}

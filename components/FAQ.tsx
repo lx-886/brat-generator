@@ -28,7 +28,7 @@ const faqItems = [
     },
     {
         question: "What's the maximum resolution for generated images?",
-        answer: "You can export images up to 5000x5000 pixels, ensuring high-quality results for print and digital use."
+        answer: "You can export images up to 1200x1200 pixels, ensuring high-quality results for print and digital use."
     },
     {
         question: "Do you offer premium brat generator features?",
